@@ -1,0 +1,45 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">Sign Up</h1>
+      <p class="text-center">Already have an account? <a href="/users/login">Sign In</a></p>
+      <%- include ('partials/messages'); %>
+      <form action="/users/register" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="secret">Secret</label>
+          <input
+            type="text"
+            id="secret"
+            name="secret"
+            class="form-control"
+            value="<%= typeof secret != 'undefined' ? secret : '' %>"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Sign Up
+        </button>
+      </form>
+      <p class="text-center mt-4">By clicking the "Sign Up" button, you are creating an account, and you agree to the Terms of Use</p>
+    </div>
+  </div>
+</div>

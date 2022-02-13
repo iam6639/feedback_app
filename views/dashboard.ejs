@@ -1,0 +1,35 @@
+<secttion class="s1">
+  <div class="main-container">
+    <form action="/users/dashboard" class="form-container" method="post">
+      <div class="comment-header">
+        <p>What would you like to share with the world?</p>
+        <textarea
+          name="usercomment"
+          id="usercomment"
+          cols="70"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <div>
+        <button class="submitbtn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</secttion>
+<section class="s2">
+  <div class="comment-wrapper">
+    <div class="all-comments">
+      <h1 class="ml-4">Comments</h1>
+      <div class="filterbutton">
+        <form action="/users/dashboard/me">
+          <button class="filterbtn">Filter</button>
+        </form>         
+      </div>
+    </div>
+    <div class="ml-4 comments">
+      <%- include('partials/usercomments')%>
+      <!-- <div class=""></div> -->
+    </div>
+  </div>
+</section>

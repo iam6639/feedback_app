@@ -1,0 +1,48 @@
+.form-container,
+.all-comments
+{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-content: center;
+  align-items: center;
+}
+
+.submitbtn,
+.filterbtn
+{
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 24px;
+}
+
+.s2{
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.comment-wrapper{
+  display: grid;
+}
+
+/* .comments{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+} */
+
+.email{
+  padding: 8px;
+}
+
+.comment{
+  border: 1px solid black;
+  padding: 12px;
+  margin: 5px;
+}
+
+.user-comment{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}

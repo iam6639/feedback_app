@@ -1,0 +1,14 @@
+<% userarray.forEach(function(userdata){ %>
+  <% if(userdata.comments.length != 0) { %>
+  <div class="user-comment">
+    <% userdata.comments.forEach(function(comment){ %>
+      <div class="email">
+        <%= userdata.email%>
+      </div>
+      <div class="comment">
+        <%= comment%>
+      </div>
+    <% }); %>
+  </div>
+  <% } %>
+<% }); %>
